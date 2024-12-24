@@ -16,13 +16,18 @@ public class ProductController {
     ProductService service;
 
 
-    @RequestMapping("/products")
+    @GetMapping("/products")
     public List<Product> getProduct(){
         return service.getProducts();
     }
 
-    @RequestMapping("/products/{id}")
+    @GetMapping("/products/{id}")
     public Product getProduct(@PathVariable int id){
         return service.getProduct(id);
+    }
+
+    @PostMapping("/products")
+    public void postProduct(@RequestBody Product product){
+        service.addProduct(product);
     }
 }
