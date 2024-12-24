@@ -11,3 +11,8 @@ Until now :
 @RequestBody-Takes the data from tbe client and places them in the server 
 
 -We have created a methods for retriveing the data from the server and the adding them to the server for now and that is all we need for now usinf get and post methods.
+
+@PutMapping - this will update the value of the product as we mentioned 
+@DeleteMapping- this will delete the product 
+
+COMPLETED WITH THE CRUD OPERATIONS IN THE SPRING BOOT.
